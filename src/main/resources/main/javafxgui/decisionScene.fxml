@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.net.URL?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.effect.Bloom?>
+<?import javafx.scene.effect.DropShadow?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.web.WebView?>
+
+<AnchorPane id="body" fx:id="welcomeText" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="447.0" prefWidth="665.0" styleClass="body" xmlns="http://javafx.com/javafx/20.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="main.javafxgui.Controller">
+   <children>
+      <Label id="Label" contentDisplay="CENTER" layoutX="237.0" layoutY="17.0" prefHeight="58.0" prefWidth="357.0" styleClass="Label" stylesheets="@style.css" text="Menu - Java Algorithms" textFill="WHITE">
+         <font>
+            <Font name="Segoe UI Bold" size="18.0" />
+         </font>
+         <effect>
+            <Bloom threshold="0.0" />
+         </effect>
+      </Label>
+      <Button contentDisplay="RIGHT" layoutX="623.0" layoutY="2.0" mnemonicParsing="false" onAction="#ExitDialog" prefHeight="22.0" prefWidth="40.0" styleClass="close" stylesheets="@style.css" text="X" textFill="WHITE" textOverrun="WORD_ELLIPSIS">
+         <font>
+            <Font name="Segoe UI Black" size="12.0" />
+         </font>
+      </Button>
+      <Button fx:id="returnB" contentDisplay="RIGHT" layoutX="563.0" layoutY="1.0" mnemonicParsing="false" prefHeight="22.0" prefWidth="60.0" styleClass="close" stylesheets="@style.css" text="Return" textFill="WHITE" textOverrun="WORD_ELLIPSIS">
+         <font>
+            <Font name="Segoe UI Black" size="12.0" />
+         </font>
+      </Button>
+      <WebView fx:id="webView1" layoutX="-416.0" layoutY="24.0" prefHeight="423.0" prefWidth="481.0" />
+      <TextField id="input" fx:id="InputField" layoutX="-224.0" layoutY="403.0" prefHeight="22.0" prefWidth="107.0" styleClass="input" stylesheets="@style.css" />
+      <Button fx:id="okB" layoutX="-46.0" layoutY="402.0" mnemonicParsing="false" onAction="#OkButton" prefHeight="22.0" prefWidth="60.0" styleClass="close" stylesheets="@style.css" text="OK" textFill="WHITE">
+         <font>
+            <Font name="Segoe UI Black" size="12.0" />
+         </font>
+      </Button>
+      <VBox id="leftpanel" layoutX="-9.0" layoutY="24.0" nodeOrientation="RIGHT_TO_LEFT" prefHeight="423.0" prefWidth="193.0" styleClass="leftpanel" stylesheets="@style.css" AnchorPane.bottomAnchor="0.0" AnchorPane.topAnchor="24.0">
+         <children>
+            <ImageView fitHeight="181.0" fitWidth="198.0" focusTraversable="true" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../imgs/java.png" />
+               </image>
+               <effect>
+                  <DropShadow blurType="TWO_PASS_BOX" height="10.0" radius="4.5" width="10.0" />
+               </effect>
+            </ImageView>
+            <Button id="button" contentDisplay="CENTER" onAction="#DecisionScene" prefHeight="34.0" prefWidth="184.0" stylesheets="@style.css" text="Decision Structure">
+               <font>
+                  <Font name="Segoe UI Bold" size="12.0" />
+               </font>
+            </Button>
+            <Button id="button" contentDisplay="CENTER" onAction="#LoopScene" prefHeight="34.0" prefWidth="184.0" stylesheets="@style.css" text="Loop Structure">
+               <font>
+                  <Font name="Segoe UI Bold" size="12.0" />
+               </font>
+            </Button>
+            <Button id="button" contentDisplay="CENTER" onAction="#ArrayScene" prefHeight="34.0" prefWidth="184.0" stylesheets="@style.css" text="Arrays Structure">
+               <font>
+                  <Font name="Segoe UI Bold" size="12.0" />
+               </font>
+            </Button>
+            <Button id="button" contentDisplay="CENTER" onAction="#RecursiveScene" prefHeight="34.0" prefWidth="184.0" stylesheets="@style.css" text="Recursive Structure">
+               <font>
+                  <Font name="Segoe UI Bold" size="12.0" />
+               </font>
+            </Button>
+            <Button id="button" contentDisplay="CENTER" onAction="#RecursiveScene" prefHeight="34.0" prefWidth="184.0" stylesheets="@style.css" text="Automatic Teller Machine">
+               <font>
+                  <Font name="Segoe UI Bold" size="12.0" />
+               </font>
+            </Button>
+         </children>
+      </VBox>
+   </children>
+   <stylesheets>
+      <URL value="@style.css" />
+   </stylesheets>
+</AnchorPane>

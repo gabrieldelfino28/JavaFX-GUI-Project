@@ -1,0 +1,119 @@
+.root{
+    -fx-font-family: "Segoe UI";
+
+}
+.body{
+
+    -fx-background-image: url("./background.jpg");
+    -fx-width: 100%;
+    -fx-height: 100%;
+    -fx-background-repeat: no-repeat;
+    -fx-background-size: 125%;
+    -fx-transition: 0.4s;
+    -fx-padding: 0;
+    -fx-margin: 0;
+    -fx-position: fixed;
+    -fx-display: block;
+}
+.Label{
+    -fx-font-family: "Segoe UI";
+    -fx-font-size: 34px;
+    -fx-color:white;
+    -fx-transition: 0.4s;
+    -fx-text-align:center;
+}
+.Label:hover{
+    -fx-transition: -fx-background-color 0.5s ease,
+    -fx-scale-x 0.5s ease,
+    -fx-scale-y 0.5s ease;
+
+}
+.button{
+    -fx-background-color: #cccccc;
+    -fx-border-radius: 20px;
+    -fx-transition: 0.4s;
+}
+
+.button:hover {
+    -fx-background-color: #ff7474;
+    -fx-color: #fff;
+    -fx-text-fill: #fff;
+    -fx-scale-y: 1.1;
+    -fx-transition: 0.4s;
+    -fx-transition: -fx-background-color 0.5s ease,
+    -fx-scale-x 0.5s ease,
+    -fx-scale-y 0.5s ease;
+    -fx-transition-delay: 0.4;
+    -fx-cursor: hand;
+    -fx-effect: dropshadow( three-pass-box, #fa7676, 10.0, 0.0, 0.0, 0.0);
+}
+
+.button:pressed {
+    -fx-scale-y: 0.9;
+    -fx-scale-x: 0.9;
+    -fx-transition: 0.5s;
+}
+
+.close{
+    -fx-background-color: transparent;
+}
+
+.close:hover{
+    -fx-background-color: #fa7676;
+    -fx-cursor: hand;
+}
+.leftpanel {
+    -fx-border-width: .4px 0px .4px .4px;
+    -fx-background-color: #cccccc;
+    -fx-text-fill: #fff;
+}
+
+.dialog{
+    -fx-color: #fff;
+    -fx-background-color: #19191a;
+    -fx-text-fill: #fff;
+    -fx-font-weight:bold;
+    -fx-padding: 0.5em 0.5em 0.5em 0.5em;
+}
+
+.dialog-pane:header .header-panel .label{
+
+    -fx-text-fill: #fff;
+    -fx-font-size:15.0px;
+}
+.dialog .button{
+    -fx-color: #fff;
+    -fx-background-color: #19191a;
+    -fx-text-fill: #fff;
+    -fx-effect: dropshadow( three-pass-box, #fa7676, 10.0, 0.0, 0.0, 0.0);
+}
+
+.input{
+    -fx-background-color: #333232;
+    -fx-text-fill: #fff;
+    -fx-border-color: #19191a ;
+    -fx-border-width: 1 ; 
+    -fx-border-radius: 2;
+}
+
+.input:hover{
+    -fx-effect: dropshadow( three-pass-box, #fa7676, 15.0, 0.0, 0.0, 0.0);
+    -fx-transition: 5;
+}
+
+.dialog .button:hover{
+    -fx-background-color: #fa7676;
+    -fx-cursor: hand;
+    -fx-font-weight:bold;
+}
+.dialog:header *.header-panel{
+    -fx-color: #fff;
+    -fx-background-color: #19191a;
+    -fx-text-fill: #fff;
+    -fx-text-inner-color: #fff;
+}
+
+.dialog > .content.label{
+
+    -fx-text-fill: #fff;
+}
