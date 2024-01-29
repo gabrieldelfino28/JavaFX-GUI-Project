@@ -19,10 +19,7 @@ import javafx.stage.Stage;
 import javafx.stage.StageStyle;
 import javafx.scene.web.*;
 import javafx.util.Duration;
-import main.javafxgui.algorithms.ArraysList;
-import main.javafxgui.algorithms.DecisionList;
-import main.javafxgui.algorithms.LoopList;
-import main.javafxgui.algorithms.RecursiveList;
+import main.javafxgui.algorithms.*;
 
 import java.util.ResourceBundle;
 import java.io.IOException;
@@ -119,7 +116,7 @@ public class Controller implements Initializable {
         fieldTransition.setByX(+600);
         fieldTransition.play();
 
-        //Return Button
+        //Return Button animations and event actions
         returnB.setOnMouseClicked(event -> {
 
             fade.setFromValue(1);
@@ -193,7 +190,7 @@ public class Controller implements Initializable {
     }
 
     public void ATM(){
-        ArraysList batch = new ArraysList();
+        ATM batch = new ATM();
     }
 
     @FXML
@@ -233,27 +230,27 @@ public class Controller implements Initializable {
     public void OkButton() {
         DecisionList batch = new DecisionList();
         String text = InputField.getText();
-        batch.main(text);
+        batch.MainMenu(text);
     }
 
     @FXML
     public void OkButton2() {
         LoopList batch = new LoopList();
         String text = InputField.getText();
-        batch.main(text);
+        batch.MainMenu(text);
     }
 
     @FXML
     public void OkButton3() {
         ArraysList batch = new ArraysList();
         String text = InputField.getText();
-        //batch.main(text);
+        //batch.MainMenu(text);
     }
 
     @FXML
     public void OkButton4() {
         RecursiveList batch = new RecursiveList();
         String text = InputField.getText();
-        //batch.main(text);
+        //batch.MainMenu(text);
     }
 }

@@ -102,6 +102,34 @@ public class LMethods {
         }
         return result;
     }
+
+    public double FuncSumSeries_Ex42() {
+        double sum = 0;
+        for (double i = 1; i <= 50; i++) {
+            sum += i / ((i * 2) - 1);
+        }
+        return sum;
+    }
+
+    public int FuncExponent_Ex44(int b, int e) {
+        int res = 1;
+        for (int i = 1; i <= e; i++) {
+            res *= b;
+        }
+        return res;
+    }
+
+    public double FuncSumSeries_Ex45() {
+        double sum = 0;
+        for (double i = 1; i <= 15; i++) {
+            if (i % 2 != 0) {
+                sum += i / (i * i);
+            } else {
+                sum -= i / (i * i);
+            }
+        }
+        return sum;
+    }
 }
 
 

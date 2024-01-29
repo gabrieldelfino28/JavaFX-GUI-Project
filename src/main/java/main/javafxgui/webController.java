@@ -81,7 +81,7 @@ public class webController extends Controller implements Initializable {
     public void OkButton() {
         LoopList batch = new LoopList();
         String text = InputField.getText();
-        batch.main(text);
+        batch.MainMenu(text);
     }
 
     @FXML
